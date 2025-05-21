@@ -1,0 +1,139 @@
+/* Global styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg') no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container wraps the entire card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Main weather card */
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-radius: 16px;
+  padding: 40px;
+  width: 350px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  text-align: center;
+  color: white;
+}
+
+/* Title styling */
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Search box container */
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  width: 200px;
+  font-size: 1rem;
+}
+
+/* Search button */
+.button {
+  padding: 10px;
+  border: none;
+  background-color: #ff914d;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff7300;
+}
+
+/* Weather information block */
+.weatherInfo {
+  margin-top: 20px;
+}
+
+.weatherTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Each row in weather info */
+.weatherRow {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.weatherRow svg {
+  margin-right: 8px;
+}
+
+/* Recent Searches section */
+.recentSearches {
+  margin-top: 30px;
+}
+
+.recentTitle {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.recentList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recentItem {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recentItem:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Loading and error text */
+.loading, .error {
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
